@@ -39,7 +39,7 @@ def checkin_file(ccpath, labels):
     """
 
     cc = ClearCase()
-    cc.checkin(ccpath, labels)
+    #cc.checkin(ccpath, labels)
 
 
 def checkin_all(cc_view_path):
@@ -50,7 +50,7 @@ def checkin_all(cc_view_path):
     git = GIT()
     labels = git.last_commit_labels(cc_view_path)
     cc = ClearCase()
-    cc.checkin_all(labels)
+    #cc.checkin_all(labels)
 
 def log_received_files_and_labels (labels, file_status_list):
     """
@@ -99,15 +99,15 @@ def process_push(cc_view_path, file_status_list):
 
                 add_file(cc_view_path + git_file[1], labels, list_co)
 
-            elif git_file[0] == 'M':
+            #elif git_file[0] == 'M':
 
-                checkin_file(cc_view_path + git_file[1], labels)
+                #checkin_file(cc_view_path + git_file[1], labels)
 
             # Deleted files do not need post_receive operations.
 
     # Checkout dirs needed to Add files checked-in.
     cc = ClearCase()
-    cc.checkin_list (list_co, labels)
+    #cc.checkin_list (list_co, labels)
     
 def do_sync(old_revision, new_revision, git, config, refs):
     """
