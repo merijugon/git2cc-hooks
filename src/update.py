@@ -92,7 +92,7 @@ def process_deletions(cc_view_path, old_revision, new_revision):
 
     # Checkout dirs for delete files are check-in.
     #
-    cc.checkin_list (co_list)
+    #cc.checkin_list (co_list)
 
 def process_push(committer, comments, file_status_list, old_revision,
                  new_revision):
