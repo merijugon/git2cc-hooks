@@ -40,7 +40,7 @@ $ git config --local core.filemode false
 * Clonamos el proyecto git2cc-hooks dentro del directorio hooks de nuestro repositorio bare.
 ```shell
 $ cd <URL_OF_BARE_GIT_REPO>/hooks
-$ git clone git@github.com:Dharryn/git2cc-hooks.git
+$ git clone git@github.com:merijugon/git2cc-hooks.git
 ```
 * Ejecutamos el script de instalación
 ```shell
@@ -52,7 +52,7 @@ $ ./install.py
 * Clonamos el proyecto git2cc-hooks dentro del directorio hooks de nuestro repositorio bare.
 ```shell
 $ cd <URL_OF_BARE_GIT_REPO>/hooks
-$ git clone git@github.com:Dharryn/git2cc-hooks.git
+$ git clone git@github.com:merijugon/git2cc-hooks.git
 ```
 
 * Aseguramos permisos de ejecución a los ficheros **update.py** y **post_receive.py**

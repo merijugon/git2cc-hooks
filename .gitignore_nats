@@ -1,0 +1,87 @@
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+#Eclipse files and folders
+.project
+.pydevproject
+
+#Python
+*.pyc
+
+#Idea IDE's
+.idea/**
+
+#GPS IDE's
+
+# Surveillance ignored by default, please include needed directories
+
+#surv/**
+#surv_*
+
+# Ignore adaptors
+
+adaptors
+
+# Generated files
+*.o
+*~
+*.err
+*.ali
+*.swp
+b~*
+*.log
+*.tmp
+*.merge
+*.merge.[0123456789]
+*.contrib
+*.contrib.[0123456789]
+Makefile.bak
+**/lost+found
+*.keep
+*.keep.[0123456789]
+*_skel
+*.a
+**GNAT-*
+**q_spd*_glue.ad[bs]
+builds/
+ccm/.settings/
+*.in
+.Makefile_LINUX*
+.Imakefile_LINUX
+obj_linux_x86
+Errores_linux_x86
+RHEL*TAO_OS
+lex.yy.c*
+*.tab.cc
+*.tab.c
+*.tab.h
+*.tab.hh
+
+#tar
+*.tar
+*.gz
+*.bz2
+*.tar.*
+el ne
+
+#cms
+cms/**
+
+#ada2idl
+ada2idl/**
+
+#adaptors
+adaptors/**
+
+#tools
+tools/**
+
+#wp
+wp/**
+
+#drf
+drf/**
